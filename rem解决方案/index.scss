@@ -1,0 +1,33 @@
+body{
+	margin:0;
+
+}
+
+/*
+   接收
+ */
+
+
+@mixin userem($size){
+	$shebei-list :320px ,375px, 414px,460px,412px,360px,384px,640px;
+	 html{
+	 	@each $shebei in $shebei-list{
+	 		@media screen and(min-width:$shebei){
+	 			 font-size:100px * ($shebei/$size);
+	 		}
+	 	}
+	 }
+ }
+
+
+@include userem(640px)
+/*@media screen and(min-width:320px){
+	 html{
+	 	font-size: 100px*(320px/640px)
+	 }
+}*/
+
+
+.list-item{
+	font-size: 0.88rem;
+}

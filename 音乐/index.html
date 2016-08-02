@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	.duration{
+		width:300px;
+		height:30px;
+		border:1px solid #000;
+  
+	}
+	.duration .current{
+		width:0%;
+		height:30px;
+		background:teal;
+		/*transition:  width 1.0s linear;*/
+	}
+</style>
+<body>
+
+   <audio src="./▶ 我的歌声里.mp3" controls="true" ></audio>	
+   <div class="duration">
+   	<div class="current"></div>
+
+ </div>
+   <script>
+       var duration = document.querySelector('.audio');
+
+   	   var current = document.querySelector('.current');
+   	   
+                          
+   	   duration.ontimeupdate = function(){
+           
+   	   	   var width = (this.currentTime/this.duration).toFixed(2)*100+'%';
+            current.style.width = width;
+   	   }
+   	   duration.onplay = function(){
+   	   }
+   </script>
+</body>
+</html>

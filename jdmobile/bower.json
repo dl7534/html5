@@ -1,0 +1,26 @@
+{
+  "name": "jd",
+  "description": "'jd index weixin'",
+  "main": "mobile, jingdong",
+  "keywords": [
+    "dinglei"
+  ],
+  "authors": [
+    "dinglei"
+  ],
+  "license": "mit",
+  "homepage": "''",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.6",
+    "touch.code.baidu.com": "Clouda-team/touch.code.baidu.com"
+  }
+}

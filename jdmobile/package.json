@@ -1,0 +1,21 @@
+{
+  "name": "index.html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "dinglei"
+  },
+  "repository": {
+    "type": "git",
+    "url": "dinglei"
+  },
+  "keywords": [
+    "dinglei"
+  ],
+  "author": "dinglei",
+  "license": "ISC",
+  "dependencies": {
+    "wiredep": "^4.0.0"
+  }
+}
